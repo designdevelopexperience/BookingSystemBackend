@@ -5,7 +5,7 @@ from .models import Owner, Event, Client, Enrollment
 
 class EnrollmentInline(admin.StackedInline):
     model = Enrollment
-    extra = 3
+    extra = 1
 
 
 class EnrollmentAdmin(admin.ModelAdmin):
