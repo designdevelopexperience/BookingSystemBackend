@@ -5,10 +5,10 @@ from .models import Owner, Event
 
 
 class OwnerViewSet(viewsets.ModelViewSet):
-    queryset = Owner.objects.all().order_by('first_name')
+    queryset = Owner.objects.all().order_by('id')
     serializer_class = OwnerSerializer
 
 
 class EventViewSet(viewsets.ModelViewSet):
-    queryset = Event.objects.all().order_by('event_name')
+    queryset = Event.objects.all().order_by('id')
     serializer_class = EventSerializer

@@ -8,7 +8,7 @@ class OwnerSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Owner
-        fields = ['first_name', 'last_name', 'events']
+        fields = ['id', 'first_name', 'last_name', 'events']
 
 
 class EventSerializer(serializers.ModelSerializer):
@@ -16,4 +16,4 @@ class EventSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Event
-        fields = ['event_name', 'date', 'capacity', 'enrollments']
+        fields = ['id', 'event_name', 'date', 'capacity', 'enrollments']
